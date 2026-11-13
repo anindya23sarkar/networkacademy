@@ -1,7 +1,7 @@
 {
   "campaign": {
     "title": "Gateway to Networking 2026",
-    "subtitle": "Free self-paced Cisco NetAcad courses for aspiring network professionals.",
+    "subtitle": "Explore free courses and build your skills in networking, cybersecurity and IT support.",
     "year": 2026
   },
   "courses": [
@@ -14,19 +14,19 @@
       "provider": "Cisco Networking Academy",
       "url": "https://www.netacad.com/courses/networking-basics?courseLang=en-US&instance_id=c6a42cba-9ab3-480c-8b28-720c72b6d3c4",
       "status": "available",
-      "description": "Build a foundation in networking concepts, devices, connectivity and how networks operate.",
+      "description": "Start with the fundamentals of computer networking, devices and connectivity.",
       "tags": [
         "Fundamentals",
         "Networking"
       ],
       "slug": "networking-basics",
-      "overview": "An introductory starting point for learners who want to understand how computer networks connect devices and support communication.",
+      "overview": "New to networking? This course helps you understand how devices connect, communicate and access the services you use every day.",
       "topics": [
         "Core networking concepts",
         "Common network devices and connections",
         "How networks support everyday digital services"
       ],
-      "for": "Beginners exploring networking for the first time.",
+      "for": "This course is a great starting point if you're new to networking or want to strengthen your fundamentals.",
       "duration": "22 hours",
       "outcomes": [
         "Explain network types, data transmission, bandwidth and throughput.",
@@ -45,19 +45,19 @@
       "provider": "Cisco Networking Academy",
       "url": "https://www.netacad.com/courses/network-addressing-and-basic-troubleshooting?courseLang=en-US&instance_id=ce09eb96-4e69-4a53-adb7-3d1f918edc44",
       "status": "available",
-      "description": "Explore network addressing concepts and foundational troubleshooting techniques.",
+      "description": "Build your understanding of IP addressing and learn how to troubleshoot common network issues.",
       "tags": [
         "IP Addressing",
         "Troubleshooting"
       ],
       "slug": "network-addressing-troubleshooting",
-      "overview": "A foundation-level course focused on network addressing concepts and the first steps in diagnosing common connectivity issues.",
+      "overview": "Ready to understand how devices are addressed and how network problems are diagnosed? In this course, you'll explore IP addressing and practical troubleshooting fundamentals.",
       "topics": [
         "Network addressing fundamentals",
         "Basic connectivity checks",
         "A structured approach to troubleshooting"
       ],
-      "for": "Learners who want to strengthen their IP addressing and basic troubleshooting foundations.",
+      "for": "Choose this course if you already know a little about networking and want to build confidence with addressing and troubleshooting.",
       "duration": "14 hours",
       "outcomes": [
         "Explain physical-layer, data-link and network-layer functions in network communication.",
@@ -76,19 +76,19 @@
       "provider": "Cisco Networking Academy",
       "url": "https://www.netacad.com/courses/network-support-security?courseLang=en-US&instance_id=66a5dd26-ba28-469f-9e5a-9f27722c13e1",
       "status": "available",
-      "description": "Discover network support practices and essential security principles.",
+      "description": "Explore network support practices, troubleshooting methods and essential security concepts.",
       "tags": [
         "Support",
         "Security"
       ],
       "slug": "network-support-security",
-      "overview": "An introduction to the support practices and security considerations involved in maintaining network environments.",
+      "overview": "Interested in keeping networks running smoothly and securely? This course introduces you to support practices, troubleshooting and essential security concepts.",
       "topics": [
         "Network support fundamentals",
         "Common operational support concepts",
         "Foundational network security awareness"
       ],
-      "for": "Learners interested in network operations, technical support and security fundamentals.",
+      "for": "This course is suited to learners interested in technical support, network operations or entry-level security concepts.",
       "duration": "12 hours",
       "outcomes": [
         "Apply troubleshooting methodologies and help-desk best practices.",
@@ -106,19 +106,19 @@
       "provider": "Cisco Networking Academy",
       "url": "https://www.netacad.com/courses/network-defense?courseLang=en-US&instance_id=db3abd9a-438e-4422-a864-beb62db0b5e1",
       "status": "available",
-      "description": "Learn core concepts and practices used to defend networks against threats.",
+      "description": "Discover the principles and tools used to protect networks against security threats.",
       "tags": [
         "Cybersecurity",
         "Defense"
       ],
       "slug": "network-defense",
-      "overview": "An introduction to the concepts and practices used to protect network environments from security threats.",
+      "overview": "Curious about how organisations protect their networks? Explore the principles, technologies and practices that help defend network environments against security threats.",
       "topics": [
         "Network defense concepts",
         "Security threats and protection principles",
         "Defensive thinking for network environments"
       ],
-      "for": "Learners interested in cybersecurity and protecting network infrastructure.",
+      "for": "Choose this course if you'd like to explore network defense and build a foundation in cybersecurity.",
       "duration": "27 hours (instructor-led listing)",
       "outcomes": [
         "Explain defense-in-depth and system/network defense principles.",
@@ -137,19 +137,19 @@
       "provider": "Cisco Networking Academy",
       "url": "https://www.netacad.com/courses/networking-essentials?courseLang=en-US&instance_id=3c26e21e-4c02-47d6-941a-d2021c8b58bb",
       "status": "available",
-      "description": "Develop practical understanding of networking essentials and common technologies.",
+      "description": "Develop a broader understanding of networking technologies, devices and connectivity.",
       "tags": [
         "Fundamentals",
         "Networking"
       ],
       "slug": "networking-essentials",
-      "overview": "A broader introduction to networking technologies and the skills used to understand and work with networked systems.",
+      "overview": "Want a broader introduction to networking? This course helps you explore network technologies, connected devices and the concepts behind reliable connectivity.",
       "topics": [
         "Networking concepts and technologies",
         "Network components and connectivity",
         "Practical networking foundations"
       ],
-      "for": "Learners who want a structured introduction to networking essentials.",
+      "for": "This course is suitable if you'd like a structured introduction to networking technologies and practical concepts.",
       "duration": "Not published for self-paced delivery",
       "outcomes": [
         "Explain how end-user devices and local networks interact with the global Internet.",
@@ -169,19 +169,19 @@
       "provider": "Cisco Networking Academy",
       "url": "https://www.netacad.com/courses/network-security?courseLang=en-US&instance_id=5551dba8-4379-44a6-80b2-0ec13a79fe44",
       "status": "available",
-      "description": "Understand the foundations of securing networks, systems and information.",
+      "description": "Explore the core principles of network security and ways to protect systems and information.",
       "tags": [
         "Cybersecurity",
         "Security"
       ],
       "slug": "network-security",
-      "overview": "An introduction to the principles and practices involved in securing networked systems and information.",
+      "overview": "Want to learn how networks and information are protected? This course introduces key security principles, common risks and the importance of safeguarding connected systems.",
       "topics": [
         "Network security fundamentals",
         "Security risks and protection concepts",
         "Building security awareness for network environments"
       ],
-      "for": "Learners looking to explore network security as part of an IT or cybersecurity pathway.",
+      "for": "Choose this course if you're interested in cybersecurity and want to understand the foundations of network protection.",
       "duration": "Not verified for this exact course listing",
       "outcomes": [
         "Understand core network security concepts and the importance of protecting data and devices.",
