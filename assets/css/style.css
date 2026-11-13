@@ -46,3 +46,8 @@ body.dark .detail-panel,body.dark .detail-aside{background:#102238}
 .profile-actions{margin:0 0 16px}
 .profile-copy .about-small{margin:0;line-height:1.65}
 @media(max-width:760px){.profile-section{grid-template-columns:minmax(0,1fr);gap:25px;padding-top:48px;padding-bottom:48px}.profile-photo-wrap{max-width:260px;margin:0 auto}.profile-copy{width:100%}.profile-copy h2{font-size:32px}}
+
+/* Expanded site brand name */
+.brand{min-width:0;max-width:calc(100% - 24px)}
+.brand>span:last-child{font-size:clamp(10px,1.15vw,13px);line-height:1.25;white-space:normal;max-width:360px}
+@media(max-width:560px){.site-header{padding-left:14px;padding-right:14px}.brand{gap:8px}.brand>span:last-child{font-size:10px;max-width:245px}}
