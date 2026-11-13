@@ -14,23 +14,34 @@ An independent, responsive course-discovery website featuring **Gateway to Netwo
 - No backend or build step required
 
 ## Run locally
-Run through a local web server because the course catalog is loaded with fetch:
+Because the catalog is loaded using `fetch`, run the site through a local web server rather than opening `index.html` directly. For example:
+
 ```bash
 python -m http.server 8000
 ```
-Then open http://localhost:8000.
+
+Then open `http://localhost:8000`.
 
 ## Deploy with GitHub Pages
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, select **Deploy from a branch**.
-3. Select `main` and `/(root)`, then save.
-4. Visit https://anindya23sarkar.github.io/netacad-learning-hub/ after deployment.
+1. Create a public repository named `netacad-learning-hub`.
+2. Upload the contents of this project to the repository root.
+3. In GitHub, open **Settings → Pages**.
+4. Under **Build and deployment**, select **Deploy from a branch**.
+5. Select `main` and `/ (root)`, then save.
+6. After deployment, visit `https://YOUR-USERNAME.github.io/netacad-learning-hub/`.
 
 ## Add or update courses
-Edit `data/courses.json`. Verify course availability and details on the official provider page before publishing.
+Edit `data/courses.json`. Each course has an ID, title, category, level, type, provider, official URL, status, description and tags. Keep the course URL linked to the provider's official enrollment page and verify availability before publishing.
 
-## Disclaimer
+## Project structure
+- `index.html` — homepage
+- `assets/css/style.css` — responsive design and themes
+- `assets/js/app.js` — course rendering, search, filters and theme
+- `data/courses.json` — course catalog
+- `pages/disclaimer.html` — independent-resource and trademark notice
+
+## Attribution and disclaimer
 This is an independent educational resource, not an official Cisco website and not affiliated with, endorsed by, or sponsored by Cisco. Cisco and Cisco Networking Academy marks belong to their respective owners. Course materials are not hosted or redistributed here.
 
 ## License
-Original website code is made available under the MIT License. This does not grant rights to third-party trademarks, course materials, logos or other third-party intellectual property.
+The original website code is made available under the MIT License. This license does not grant rights to third-party trademarks, course materials, logos or other third-party intellectual property.

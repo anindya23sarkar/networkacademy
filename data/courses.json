@@ -1,0 +1,99 @@
+{
+  "campaign": {
+    "title": "Gateway to Networking 2026",
+    "subtitle": "Free self-paced Cisco NetAcad courses for aspiring network professionals.",
+    "year": 2026
+  },
+  "courses": [
+    {
+      "id": 1,
+      "title": "Networking Basics",
+      "category": "Networking",
+      "level": "Beginner",
+      "type": "free",
+      "provider": "Cisco Networking Academy",
+      "url": "https://www.netacad.com/courses/networking-basics?courseLang=en-US&instance_id=c6a42cba-9ab3-480c-8b28-720c72b6d3c4",
+      "status": "available",
+      "description": "Build a foundation in networking concepts, devices, connectivity and how networks operate.",
+      "tags": [
+        "Fundamentals",
+        "Networking"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Network Addressing and Basic Troubleshooting",
+      "category": "Networking",
+      "level": "Beginner",
+      "type": "free",
+      "provider": "Cisco Networking Academy",
+      "url": "https://www.netacad.com/courses/network-addressing-and-basic-troubleshooting?courseLang=en-US&instance_id=ce09eb96-4e69-4a53-adb7-3d1f918edc44",
+      "status": "available",
+      "description": "Explore network addressing concepts and foundational troubleshooting techniques.",
+      "tags": [
+        "IP Addressing",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Network Support and Security",
+      "category": "Networking",
+      "level": "Intermediate",
+      "type": "free",
+      "provider": "Cisco Networking Academy",
+      "url": "https://www.netacad.com/courses/network-support-security?courseLang=en-US&instance_id=66a5dd26-ba28-469f-9e5a-9f27722c13e1",
+      "status": "available",
+      "description": "Discover network support practices and essential security principles.",
+      "tags": [
+        "Support",
+        "Security"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Network Defense",
+      "category": "Cybersecurity",
+      "level": "Intermediate",
+      "type": "free",
+      "provider": "Cisco Networking Academy",
+      "url": "https://www.netacad.com/courses/network-defense?courseLang=en-US&instance_id=db3abd9a-438e-4422-a864-beb62db0b5e1",
+      "status": "available",
+      "description": "Learn core concepts and practices used to defend networks against threats.",
+      "tags": [
+        "Cybersecurity",
+        "Defense"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Networking Essentials",
+      "category": "Networking",
+      "level": "Beginner",
+      "type": "free",
+      "provider": "Cisco Networking Academy",
+      "url": "https://www.netacad.com/courses/networking-essentials?courseLang=en-US&instance_id=3c26e21e-4c02-47d6-941a-d2021c8b58bb",
+      "status": "available",
+      "description": "Develop practical understanding of networking essentials and common technologies.",
+      "tags": [
+        "Fundamentals",
+        "Networking"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Network Security",
+      "category": "Cybersecurity",
+      "level": "Intermediate",
+      "type": "free",
+      "provider": "Cisco Networking Academy",
+      "url": "https://www.netacad.com/courses/network-security?courseLang=en-US&instance_id=5551dba8-4379-44a6-80b2-0ec13a79fe44",
+      "status": "available",
+      "description": "Understand the foundations of securing networks, systems and information.",
+      "tags": [
+        "Cybersecurity",
+        "Security"
+      ]
+    }
+  ]
+}

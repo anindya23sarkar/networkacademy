@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Network Engineer Foundations",
+    "description": "Start with networking fundamentals, addressing and troubleshooting.",
+    "courses": [
+      1,
+      2,
+      5
+    ]
+  },
+  {
+    "title": "Network Security Foundations",
+    "description": "Explore network support, defense and security fundamentals.",
+    "courses": [
+      3,
+      4,
+      6
+    ]
+  }
+]
