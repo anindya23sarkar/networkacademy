@@ -18,7 +18,15 @@
       "tags": [
         "Fundamentals",
         "Networking"
-      ]
+      ],
+      "slug": "networking-basics",
+      "overview": "An introductory starting point for learners who want to understand how computer networks connect devices and support communication.",
+      "topics": [
+        "Core networking concepts",
+        "Common network devices and connections",
+        "How networks support everyday digital services"
+      ],
+      "for": "Beginners exploring networking for the first time."
     },
     {
       "id": 2,
@@ -33,7 +41,15 @@
       "tags": [
         "IP Addressing",
         "Troubleshooting"
-      ]
+      ],
+      "slug": "network-addressing-troubleshooting",
+      "overview": "A foundation-level course focused on network addressing concepts and the first steps in diagnosing common connectivity issues.",
+      "topics": [
+        "Network addressing fundamentals",
+        "Basic connectivity checks",
+        "A structured approach to troubleshooting"
+      ],
+      "for": "Learners who want to strengthen their IP addressing and basic troubleshooting foundations."
     },
     {
       "id": 3,
@@ -48,7 +64,15 @@
       "tags": [
         "Support",
         "Security"
-      ]
+      ],
+      "slug": "network-support-security",
+      "overview": "An introduction to the support practices and security considerations involved in maintaining network environments.",
+      "topics": [
+        "Network support fundamentals",
+        "Common operational support concepts",
+        "Foundational network security awareness"
+      ],
+      "for": "Learners interested in network operations, technical support and security fundamentals."
     },
     {
       "id": 4,
@@ -63,7 +87,15 @@
       "tags": [
         "Cybersecurity",
         "Defense"
-      ]
+      ],
+      "slug": "network-defense",
+      "overview": "An introduction to the concepts and practices used to protect network environments from security threats.",
+      "topics": [
+        "Network defense concepts",
+        "Security threats and protection principles",
+        "Defensive thinking for network environments"
+      ],
+      "for": "Learners interested in cybersecurity and protecting network infrastructure."
     },
     {
       "id": 5,
@@ -78,7 +110,15 @@
       "tags": [
         "Fundamentals",
         "Networking"
-      ]
+      ],
+      "slug": "network-security",
+      "overview": "A broader introduction to networking technologies and the skills used to understand and work with networked systems.",
+      "topics": [
+        "Networking concepts and technologies",
+        "Network components and connectivity",
+        "Practical networking foundations"
+      ],
+      "for": "Learners who want a structured introduction to networking essentials."
     },
     {
       "id": 6,
@@ -93,7 +133,15 @@
       "tags": [
         "Cybersecurity",
         "Security"
-      ]
+      ],
+      "slug": "networking-essentials",
+      "overview": "An introduction to the principles and practices involved in securing networked systems and information.",
+      "topics": [
+        "Network security fundamentals",
+        "Security risks and protection concepts",
+        "Building security awareness for network environments"
+      ],
+      "for": "Learners looking to explore network security as part of an IT or cybersecurity pathway."
     }
   ]
 }
