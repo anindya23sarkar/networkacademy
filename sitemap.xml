@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://anindya23sarkar.github.io/netacad-learning-hub/</loc></url>
-<url><loc>https://anindya23sarkar.github.io/netacad-learning-hub/pages/disclaimer.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/free-courses.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/paid-courses.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/disclaimer.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/courses/network-addressing-troubleshooting.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/courses/network-defense.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/courses/network-security.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/courses/network-support-security.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/courses/networking-basics.html</loc></url>
+  <url><loc>https://anindya23sarkar.github.io/networkacademy/pages/courses/networking-essentials.html</loc></url>
 </urlset>
