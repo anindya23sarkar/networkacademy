@@ -27,13 +27,14 @@
         "How networks support everyday digital services"
       ],
       "for": "Beginners exploring networking for the first time.",
-      "duration": "22 hours (self-paced)",
+      "duration": "22 hours",
       "outcomes": [
-        "Explain fundamental networking concepts, devices, media and protocols.",
-        "Describe IPv4 addressing, network types and wireless access.",
-        "Observe how data moves through networks and configure devices for connectivity."
+        "Explain network types, data transmission, bandwidth and throughput.",
+        "Identify network components, clients, servers, ISP connectivity and wireless/mobile connections.",
+        "Describe Ethernet, IPv4, routing, TCP/UDP and application-layer services.",
+        "Build a simple LAN and use network testing utilities."
       ],
-      "durationNote": "Cisco's published course information lists 22 hours for the self-paced version."
+      "durationNote": "Cisco's published CCST Networking curriculum lists 22 hours for this course; Cisco identifies it as available instructor-led or self-paced."
     },
     {
       "id": 2,
@@ -57,13 +58,14 @@
         "A structured approach to troubleshooting"
       ],
       "for": "Learners who want to strengthen their IP addressing and basic troubleshooting foundations.",
-      "duration": "14 hours (self-paced)",
+      "duration": "14 hours",
       "outcomes": [
-        "Explain how physical, data-link and network-layer functions support end-to-end connectivity.",
-        "Implement an IPv6 addressing scheme and describe Cisco routers and switches.",
+        "Explain physical-layer, data-link and network-layer functions in network communication.",
+        "Implement an IPv6 addressing scheme.",
+        "Describe the operation of Cisco routers and switches.",
         "Troubleshoot basic network connectivity issues."
       ],
-      "durationNote": "Cisco's FY26 educator guide lists 14 hours for the self-paced version."
+      "durationNote": "Cisco's published CCST Networking curriculum lists 14 hours for this course; Cisco identifies it as available instructor-led or self-paced."
     },
     {
       "id": 3,
@@ -87,13 +89,13 @@
         "Foundational network security awareness"
       ],
       "for": "Learners interested in network operations, technical support and security fundamentals.",
-      "duration": "12 hours (self-paced)",
+      "duration": "12 hours",
       "outcomes": [
-        "Apply effective troubleshooting methodologies and help-desk best practices.",
+        "Apply troubleshooting methodologies and help-desk best practices.",
         "Explain common endpoint threats, vulnerabilities and attacks.",
-        "Describe essential configuration steps for secure user access on a network."
+        "Describe essential steps to configure secure user access on a network."
       ],
-      "durationNote": "Cisco's FY26 educator guide lists 12 hours for the self-paced version."
+      "durationNote": "Cisco's published CCST Networking curriculum lists 12 hours for this course; Cisco identifies it as available instructor-led or self-paced."
     },
     {
       "id": 4,
@@ -117,14 +119,14 @@
         "Defensive thinking for network environments"
       ],
       "for": "Learners interested in cybersecurity and protecting network infrastructure.",
-      "duration": "27 hours (self-paced)",
+      "duration": "27 hours (instructor-led listing)",
       "outcomes": [
-        "Explain defense-in-depth and core network-defense principles.",
-        "Apply access-control concepts and understand access control lists.",
+        "Explain defense-in-depth and system/network defense principles.",
+        "Apply access-control concepts and configure access control lists in learning scenarios.",
         "Describe firewall technologies, cloud security and cryptography.",
-        "Understand security data sources and how security alerts are evaluated."
+        "Understand network security data and evaluate security alerts."
       ],
-      "durationNote": "Cisco's FY26 educator guide lists 27 hours for the self-paced version."
+      "durationNote": "Cisco's current Network Defense course page lists 27 hours and labels this version instructor-led. A separate self-paced duration is not stated here."
     },
     {
       "id": 5,
@@ -148,13 +150,15 @@
         "Practical networking foundations"
       ],
       "for": "Learners who want a structured introduction to networking essentials.",
-      "duration": "Not specified for self-paced study",
+      "duration": "Not published for self-paced delivery",
       "outcomes": [
-        "Describe high-level network architecture and how a network operates.",
-        "Develop foundational knowledge of network components, connectivity and network services.",
-        "Build practical networking familiarity through interactive activities and Packet Tracer-based learning."
+        "Explain how end-user devices and local networks interact with the global Internet.",
+        "Explain network connectivity requirements and the role of IP addressing.",
+        "Build a small network using an integrated router.",
+        "Explain TCP/IP protocols and configure wireless router security.",
+        "Troubleshoot common home and small-business network issues."
       ],
-      "durationNote": "Cisco's published FY26 guide describes Networking Essentials as a 70-hour instructor-led course. A self-paced duration was not confirmed, so no self-paced estimate is shown."
+      "durationNote": "Cisco's course catalog lists a 65-hour instructor-led course. This is not presented as a self-paced duration."
     },
     {
       "id": 6,
@@ -178,13 +182,14 @@
         "Building security awareness for network environments"
       ],
       "for": "Learners looking to explore network security as part of an IT or cybersecurity pathway.",
-      "duration": "Not specified for self-paced study",
+      "duration": "Not verified for this exact course listing",
       "outcomes": [
-        "Explore the core principles of network security and the protection of information.",
-        "Understand security concepts including confidentiality, integrity and availability.",
-        "Review the current official course page for the detailed module outcomes and delivery-specific duration."
+        "Understand core network security concepts and the importance of protecting data and devices.",
+        "Explore common network threats and security infrastructure.",
+        "Review secure network communication and protection principles.",
+        "Use the official course page to confirm the current curriculum and assessment details."
       ],
-      "durationNote": "Cisco's available course information surfaced a 70-hour instructor-led version; a self-paced duration was not confirmed."
+      "durationNote": "Cisco's available Network Security material varies by curriculum and delivery. No duration is displayed here until the exact self-paced course version can be confirmed."
     }
   ]
 }
