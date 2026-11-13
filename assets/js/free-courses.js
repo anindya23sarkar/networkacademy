@@ -1,1 +1,34 @@
-const list=document.getElementById('course-list'),search=document.getElementById('search'),category=document.getElementById('category');let courses=[];const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function render(){const q=search.value.toLowerCase();const items=courses.filter(c=>(c.title+' '+c.description).toLowerCase().includes(q)&&(category.value==='All'||c.category===category.value));list.innerHTML=items.length?items.map(c=>'<article class="course-card"><div class="card-top"><span class="course-icon">⌘</span><span class="free-tag">FREE</span></div><h3>'+esc(c.title)+'</h3><p>'+esc(c.description)+'</p><div class="card-meta"><span class="meta-pill">'+esc(c.category)+'</span><span class="meta-pill">'+esc(c.duration)+'</span></div><a class="course-link" href="courses/'+encodeURIComponent(c.slug)+'.html">View course details <span>→</span></a></article>').join(''):'<div class="directory-empty">We couldn't find a matching course. Please try another search or category.</div>';}fetch('../data/courses.json').then(r=>r.json()).then(d=>{courses=d.courses.filter(c=>c.type==='free');render();}).catch(()=>list.textContent='We couldn't load the course list just now. Please refresh the page and try again.');[search,category].forEach(x=>x.addEventListener('input',render));
+const list=document.getElementById('course-list');
+const search=document.getElementById('search');
+const category=document.getElementById('category');
+let courses=[];
+function escapeHTML(value){
+  return String(value).replace(/[&<>"']/g,character=>({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[character]));
+}
+function render(){
+  const query=(search.value||'').trim().toLowerCase();
+  const items=courses.filter(course=>
+    (course.title+' '+course.description).toLowerCase().includes(query) &&
+    (category.value==='All'||course.category===category.value)
+  );
+  list.innerHTML=items.length?items.map(course=>`
+    <article class="course-card">
+      <div class="card-top"><span class="course-icon">⌘</span><span class="free-tag">FREE COURSE</span></div>
+      <h3>${escapeHTML(course.title)}</h3>
+      <p>${escapeHTML(course.description)}</p>
+      <div class="card-meta"><span class="meta-pill">${escapeHTML(course.category)}</span><span class="meta-pill">${escapeHTML(course.duration)}</span></div>
+      <a class="course-link" href="courses/${encodeURIComponent(course.slug)}.html">Explore this course <span>→</span></a>
+    </article>`).join(''):'<div class="directory-empty">We couldn\'t find a course matching your search. Please try another keyword or category.</div>';
+}
+fetch('../data/courses.json').then(response=>{
+  if(!response.ok) throw new Error('Course catalogue unavailable');
+  return response.json();
+}).then(data=>{
+  courses=(data.courses||[]).filter(course=>course.type==='free');
+  render();
+}).catch(()=>{
+  list.textContent='We couldn\'t load the course list just now. Please refresh the page and try again.';
+});
+[search,category].forEach(control=>control.addEventListener('input',render));
