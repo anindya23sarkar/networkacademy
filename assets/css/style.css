@@ -19,3 +19,9 @@
 .back-link{display:inline-block;color:var(--blue);font-size:12px;font-weight:700;margin-top:22px}
 body.dark .detail-panel,body.dark .detail-aside{background:#102238}
 @media(max-width:700px){.detail-layout{grid-template-columns:1fr;padding:35px 0 55px}.detail-hero{padding:40px 0}.detail-panel,.detail-aside{padding:20px}}
+
+/* Duration and learning outcome detail sections */
+.detail-panel h2{margin-top:28px}
+.detail-panel h2:first-of-type{margin-top:0}
+.detail-duration{font:700 20px Manrope;color:var(--ink)}
+.detail-duration-note{font-size:11px!important;line-height:1.65}
