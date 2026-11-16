@@ -1,0 +1,7 @@
+{
+  "name": "networkacademy",
+  "private": true,
+  "scripts": {
+    "validate:data": "node scripts/validate-data.mjs"
+  }
+}
