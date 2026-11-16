@@ -4,22 +4,81 @@ const category=document.getElementById('category-filter');
 const level=document.getElementById('level-filter');
 const icons=['⌘','⌁','◈','⬡','⌗','◇'];
 let courses=[];
+
 function escapeHTML(value){
   return String(value).replace(/[&<>"']/g, character => ({
     '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
   }[character]));
 }
+
+function safeStorageGet(key){
+  try {
+    return window.localStorage.getItem(key);
+  } catch (error) {
+    return null;
+  }
+}
+
+function safeStorageSet(key,value){
+  try {
+    window.localStorage.setItem(key,value);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
+function showNoScriptMessage(){
+  const target=document.querySelector('main') || document.body;
+  if(!target || target.querySelector('.noscript-message')) return;
+
+  const banner=document.createElement('div');
+  banner.className='noscript-message';
+  banner.setAttribute('role','status');
+  banner.textContent='JavaScript is disabled or unavailable. Some features may not display correctly. Enable JavaScript for the complete learning hub experience.';
+  banner.style.cssText='margin:1rem auto;max-width:960px;padding:1rem 1.25rem;border-radius:10px;background:#fff7d6;color:#5f4a00;border:1px solid #f0d36a;box-sizing:border-box;';
+  target.insertBefore(banner,target.firstChild);
+}
+
+function syncHomeStats(){
+  const stats=Array.from(document.querySelectorAll('.stats strong'));
+  if(!stats.length) return;
+
+  Promise.all([
+    fetch('data/courses.json').then(response=>{
+      if(!response.ok) throw new Error('Course list unavailable');
+      return response.json();
+    }),
+    fetch('data/learning-paths.json').then(response=>{
+      if(!response.ok) throw new Error('Learning paths unavailable');
+      return response.json();
+    })
+  ]).then(([coursesData, pathsData])=>{
+    const courseCount=(coursesData.courses||[]).filter(course=>course.type==='free').length;
+    const pathCount=Array.isArray(pathsData)?pathsData.length:0;
+
+    if(stats[0]) stats[0].textContent=String(courseCount).padStart(2,'0');
+    if(stats[1]) stats[1].textContent=String(pathCount).padStart(2,'0');
+  }).catch(()=>{
+    if(stats[0]) stats[0].textContent='--';
+    if(stats[1]) stats[1].textContent='--';
+  });
+}
+
 function renderCourses(){
+  if(!grid) return;
   const query=(search.value||'').trim().toLowerCase();
   const filtered=courses.filter(course =>
-    (course.title+' '+course.description+' '+course.tags.join(' ')).toLowerCase().includes(query) &&
+    (course.title+' '+course.description+' '+(course.tags||[]).join(' ')).toLowerCase().includes(query) &&
     (category.value==='All'||course.category===category.value) &&
     (level.value==='All'||course.level===level.value)
   );
+
   if(!filtered.length){
     grid.innerHTML='<div class="empty-state">We couldn\'t find a course matching your search. Please try another keyword or adjust the filters.</div>';
     return;
   }
+
   grid.innerHTML=filtered.map(course=>`
     <article class="course-card">
       <div class="card-top"><span class="course-icon">${icons[(course.id-1)%icons.length]}</span><span class="free-tag">FREE COURSE</span></div>
@@ -29,16 +88,25 @@ function renderCourses(){
       <a class="course-link" href="pages/courses/${encodeURIComponent(course.slug)}.html">Explore this course <span>↗</span></a>
     </article>`).join('');
 }
-fetch('data/courses.json').then(response=>{
-  if(!response.ok) throw new Error('Course list unavailable');
-  return response.json();
-}).then(data=>{
-  courses=data.courses||[];
-  renderCourses();
-}).catch(()=>{
-  grid.innerHTML='<div class="empty-state">We couldn\'t load the course list just now. Please refresh the page and try again.</div>';
-});
-[search,category,level].forEach(control=>control.addEventListener('input',renderCourses));
+
+if(grid){
+  fetch('data/courses.json').then(response=>{
+    if(!response.ok) throw new Error('Course list unavailable');
+    return response.json();
+  }).then(data=>{
+    courses=data.courses||[];
+    renderCourses();
+  }).catch(()=>{
+    grid.innerHTML='<div class="empty-state">We couldn\'t load the course list just now. Please refresh the page and try again.</div>';
+  });
+
+  [search,category,level].forEach(control=>{
+    if(control){
+      control.addEventListener('input',renderCourses);
+    }
+  });
+}
+
 const menu=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.nav');
 if(menu&&nav){
@@ -51,11 +119,21 @@ if(menu&&nav){
     menu.setAttribute('aria-expanded','false');
   }));
 }
+
 const theme=document.querySelector('.theme-toggle');
 if(theme){
-  if(localStorage.getItem('nlh-theme')==='dark') document.body.classList.add('dark');
+  const savedTheme=safeStorageGet('nlh-theme');
+  const prefersDark=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if(savedTheme==='dark' || (!savedTheme && prefersDark)) {
+    document.body.classList.add('dark');
+  }
+
   theme.addEventListener('click',()=>{
     document.body.classList.toggle('dark');
-    localStorage.setItem('nlh-theme',document.body.classList.contains('dark')?'dark':'light');
+    const isDark=document.body.classList.contains('dark');
+    safeStorageSet('nlh-theme', isDark ? 'dark' : 'light');
   });
 }
+
+showNoScriptMessage();
+syncHomeStats();
