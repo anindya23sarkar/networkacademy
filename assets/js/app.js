@@ -28,18 +28,6 @@ function safeStorageSet(key,value){
   }
 }
 
-function showNoScriptMessage(){
-  const target=document.querySelector('main') || document.body;
-  if(!target || target.querySelector('.noscript-message')) return;
-
-  const banner=document.createElement('div');
-  banner.className='noscript-message';
-  banner.setAttribute('role','status');
-  banner.textContent='JavaScript is disabled or unavailable. Some features may not display correctly. Enable JavaScript for the complete learning hub experience.';
-  banner.style.cssText='margin:1rem auto;max-width:960px;padding:1rem 1.25rem;border-radius:10px;background:#fff7d6;color:#5f4a00;border:1px solid #f0d36a;box-sizing:border-box;';
-  target.insertBefore(banner,target.firstChild);
-}
-
 function syncHomeStats(){
   const stats=Array.from(document.querySelectorAll('.stats strong'));
   if(!stats.length) return;
@@ -135,5 +123,4 @@ if(theme){
   });
 }
 
-showNoScriptMessage();
 syncHomeStats();
